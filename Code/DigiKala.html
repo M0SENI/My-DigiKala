@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="DigiKala.css">
+    <script src="JqueryDevelopment.js"></script>
+</head>
+<body>
+<a href="1" id="h"></a>
+    <header>
+        <div class="header-right">
+            <img src="" class="logo">
+            <div>
+                <img class="search-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAd5JREFUSEu11cvLTWEUx/HPGxnIpSiXiZAwcIuSAQpFL2XqUgxIURhQBv4AMiEhDCgk5Q+Q0VsImSAlopTIgFwi9+uz6nl1HO/e5xnssya7zn7O+j5rrd9v7R5djp4u51cHmIB1WInZ+SJ3cAkX8LzkcgMBRuAcVtck+I2L2IRPdaB2wFDcwgx8xUkcxpOcZDJ2YQuG5LOL8L0K0g44iw14hhV4UPHHWbicLjAeB7G7BDAT9/Aj9Xk+ot91sRhX8A2T8GKgw60VHMF2HMWOkgHiPNYnyF7s7wR4jCm5//cLAUvQh2vpGRX9F60VfEQMeRB+FQJGpWpf4w1GdwK8x3AMQ8BKIs5+wCuM6QS4mw01L3ngdkn2pKQFSW03c5uWdQIcSKbZgxPYVgg4kzyyMbUnBLKzE2AqHuJnoUzDYFdz0sqq2412Ktv/KZYnCT6qqGRONtrY7PatJUaLM62r4guO41B2dryPKmNVbMbgnDRmEK6PYdfKtP/lyGygVTVzeJd20b7U0rWYm12/FPH7P1G3ridml/Yids/nrK4bOIa3CB+E0WKdhwpDSeGJv9HEBycg1zEdsQ0W4mU/oQlA5AqThaKm5fmcbhoQ+cal9b4mfz8abVGtJ5tqUSWk64A/OxFWGSrrSC8AAAAASUVORK5CYII="/>
+                <input placeholder="          جستجو" class="input-search">
+            </div>
+        </div>
+        <div class="header-left">
+            <a href="#">
+                <img style="margin-right: 8px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcdJREFUSEu11cuLT2EYwPHPJKxcF1aU2MhKYusSucUfMKZclhaEhWStZOEWWVPI2iUzwxR7UpZSbisrl7JQxPtM59WZ0++dc36/5vdszu15nu/7XM+IIcvIkP1rA8zHNjwtHGQfJvCndNA2wClcxlXEfV1u4hhO4toggGX4iEXYj8cNJ/HuIX5gNb72gswWQT5hpGdX4YTPsRU3cLwfwHq8qQzW4V0B0KpXiuAFtuA6TrR0Wo50Erubur0AB/CgyunaUm5rjqJWH1IzLEZ01ZM6pA54jQ1zNBcvU1NsDl91wCesmiNAdF901gzALRxObXcaVwYEhe2l5Dx8HW0CDuIuxrF3QEDYRqFHcb8JWFoV9FeKYAnimuVvdZNT2nyOzwvTtH/HAixPE/6tCYjnXOidmOoTEDYxlK+wKds22/QiziCuZ/sEZNsLOFcC7MCzKpKNfQJy9NvTBo4VMi3NCHIe4xoDNJ1HtNVgRdqsX/Azbd6o5e8SIN7HJO7BGO517KbQvZNy/yjVIDbBf+m1KvI/4HZaAUc6AkL3ULW3Yn/NCliDt5jX0XldLWzftwHie0z0eazsCPlcdU6kaYa0/TI7+i+rDR3wDwfaVhmgMnYmAAAAAElFTkSuQmCC"/>
+            </a>
+            <img class="line" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAEJJREFUSEtjZKAxYKSx+QzDy4L/VA4ucOggB9GoBeghPBpEBNPcaBCNBhHBECCoYDQVkR5EBHWQo2B4VZnkhABBPQCCKRAZBxM+SwAAAABJRU5ErkJggg=="/>
+            <a href="#">
+                <img style="margin-left: 8px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAATVJREFUSEu11b8rR1EYx/HXt5gMymKjRIrB32CwkhhtRgazjEosFgZ/gE0M/gZ/gIFSSmxKMku4R/dbt+v+OPdyz3KG89zP+3k+z7nP6el49TrWVwVYxS6mGyZxhx2che+qADeYaSjeD7/FbB3gq0T8FRfp2TJGSuJ+kq+qoAjwnIjPIexhjeI63fOcVoBjbOaUjrBRUEUrwDlW2gL6lvRtK7LoHVN4SiEDuMd4TAUxgKDzicvEqhcsYCy2ybGA2Jv7qwd1gHB+ggM8pJQJbGP9rxaFu7+YWHJVkv58attQ5rxRBWtJc09rvNnCYVvAYDJfPmoAw3hrC4htbDau1qJ/H3b5WxTG9R4mG6ZfOq7zgIa6xeHZado54LHit6+qpvLZzR4uYb/FExkN+BfPC1+dTpRT0W88zz4ZLvda9wAAAABJRU5ErkJggg=="/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANZJREFUSEvt081pAlEUhuFHsIcEVBJMmggi9mEDggXYRlZu3KWUECRN+I+C6SGIHBhBYmbmuhBczF0O33zvOe/Mrbnxqd24XwUoNVwpun9FI3zgJ2fUB/TxnrdK0UceYow5etj9KWngEy8YYPIfpAjwiC+8Yo3OGSTKp3jCDF3srwVEPiDfeD6DxPNT+QpveeURTLkHzUxFG0vU0cIiU7ct+pVSAPF+QEJXbBInJg8theWpG5wGDEjo+k0tvxYQ+djggE3pDcsCqYpS+y5yFaBUXaWoVNERTkIfGckggW4AAAAASUVORK5CYII="/>
+            </a>
+        </div>
+        <nav class="first-nav">
+            <ul class="items">
+                <li class="daste">
+                        <img id="arrow-down" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANZJREFUSEvt081pAlEUhuFHsIcEVBJMmggi9mEDggXYRlZu3KWUECRN+I+C6SGIHBhBYmbmuhBczF0O33zvOe/Mrbnxqd24XwUoNVwpun9FI3zgJ2fUB/TxnrdK0UceYow5etj9KWngEy8YYPIfpAjwiC+8Yo3OGSTKp3jCDF3srwVEPiDfeD6DxPNT+QpveeURTLkHzUxFG0vU0cIiU7ct+pVSAPF+QEJXbBInJg8theWpG5wGDEjo+k0tvxYQ+djggE3pDcsCqYpS+y5yFaBUXaWoVNERTkIfGckggW4AAAAASUVORK5CYII="/>
+                        <img id="arrow-top" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMVJREFUSEvtlbEJAkEQRd/VoaBiFSKiRViCibGVmJiZ2oeKXYgoKGcZOjALBnv3V2Ejd+O593beHVxF5lNl5lMEsvD/Jep5k5ts4wPfJOoCR39uAtxTJKmCAO879AokSVIEBj8AA8DAdkx0AaZqEyX4vLl1H7vgBNj7MOEIeDblahPE4A8HdYAgOXuuqKRNsAQ2gAFmQICHy5pkDwzfmRbANraFSrQCdkDdkMAkc2D9S6KUr1DOqA0kQA0UgSpU/miyUP5EL3hdHRmNCeR+AAAAAElFTkSuQmCC"/>
+                    <a href="#" style="padding-left: 0;!important; padding-bottom: 5px"> دسته بندی کالا ها</a>
+                </li>
+                <li class="line">|</li>
+                <li>
+                    <a href="#">
+                        شگفت انگیز
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        سوبر مارکت
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        ارزان ترین ها
+                    </a>
+                </li>
+                <li >
+                    <a href="#">
+                        برفروش ترین ها
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<div class="org-daste" >
+    <div class="item-list">
+        <ul class="ul-listitem">
+            <li>
+                <div class="mobile"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKNJREFUSEvt1r0JQjEUhuHnziAOIBau4SqioIWuoJuIrUso2rmDuIqSzp+rOcJNl1Ol+Mib85Jw0ihcTeH9fQOssUQ/cIA7zpjh+p5vAwzbggHQFtMIYIwjTkjrXP3Mt3VQAS9Kq6Kko96i3DurirKGulM0wgV7zJ+4nV3T4oBvsv7uYIBbXv1HYodJZOCkzAYr9AKgNDIPWERHZmDPeKT4r+IBXB5QGRpG2/cAAAAASUVORK5CYII="/><a href="#"><span class="item-list-span-hover">موبایل </span></a></div></li>
+            <li>
+                <div class="digital">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJBJREFUSEvtlE0OQDAUhD+nsBYWDiK2LuMQTiSxcA4r1m5BiIq/Iq1KmrTbduZ7b9KMh+HjGfbnd0AGFECsuFkD5EAp9McNesBXNBeyDghlgGG5UI3upD8aOYCL6PEDu4gsiGjqkeBxzvsHLRDJuigFKk1AAtRXAPHFNP1X+dxz27IzDvhq8p2Pau+/HsZ+wAifXyEZA1BA5wAAAABJRU5ErkJggg=="/><a href="#"><span class="item-list-span-hover">کالای دیجیتال</span></a>
+                </div>
+            </li>
+            <li>
+                <div class="fashion">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAO9JREFUSEvt1bFKA0EQBuAv+AY2doJdGklhaRMLG1Mr5D3iS1j5FoIpBRFMsEmVWrCwsE3nG5hkYop19S4eXEDhDg6Om9n///ef2dmWLT+tLeMrIzjGGfo4wnsmZncZn+JmGb9bf3/TmxLs4GT99tBJsi8wzFaf4zb5F2QPGGOCj4ilBC9oF1g2wwCPCCGnuMJeQf4zDnOCec31WIlPd/D/CaIodbVtYEWtvgBeYx8j3OOtYk0OEN0XDfCKy5wgx6takx93X2ZJQ7CyvLEo7bymizae679n0RO6G3V/JsT8ihlUemX+EqtaWl3juZB1AZ1vKBletK7mAAAAAElFTkSuQmCC"/><a href="#"><span class="item-list-span-hover">مد و بوشاک</span></a>
+                </div>
+            </li>
+            <li>
+                <div class="care">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbFJREFUSEu11U+IjWEUBvDf+F+IrDBTkkJs/ElZTopGFkJKLCVZWliIUiK7KTsbJWUxNSM0M01Z2IxSNlLKnx0lC0UWkky8R+/Vbe5779d3r3vq23y953nOeZ73nHdAn2Ogz/j+J8Ey7MFebMXpKL6KYAn24wh2Yz1WpeQP+IjfWIoNWNuE9wuLqwiO4ybWdSnjIsyVOoiKbuNUl8CRFp0taNfBLZztATxSv2UpWzzYgtdtwL9jNifvxKYORbzJRrcQnMfovMRnycgb+d8ZjCD07RSPcLgk0QSO5syfuIhp3MOuGrJdTT5cKRE8wTB+YB+W4z5W1gCPowfwuETwPN/36OJF6uZlF+CfMYhQoMWDh3iLC2h0U7N413G5kTR/Dk7iQfp2pAl+Whc5S7sRn9oRNP43m12HJ4wNg/9FaZJX4CsW1kFGyBs7K6a4I8EhTNYEv4uYkb/GVhFcwyXEbVjT2CltCN/jXJ6V4pGSROM4lm/SnbQ6TmA7hpqubJg4lvb/VKnqqg5eYRsOpsdjpqZULcdLHXzBamxOK/tdPwjmsu6xJmKD9hRVT2ZP4JHcd4I/2xxDGX9ns/0AAAAASUVORK5CYII="/><a href="#"><span class="item-list-span-hover">زیبایی و سلامتی</span></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="big-listitem">
+        <div class="top-right">
+            <ul>
+                <li><h2><img class="red-line" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANRJREFUSEvtVsENwjAMvHgEGjENZQF2gA9MUMaACeADO7AAMA1qGeGCqJqqpUJJC+kr+dq+sy+RLwqBjwqMjw7BA0hFZK2AhQESnwYUUBjgIuRhAtybNS2CQmRngMwH9FuOAvYJubXxmuAJzChy+wXc1pKcT4ESqybIRU4Alv8gAHDW5KpFUIjkvpq7mnjfSULqzwmMq7BPXJOlOk2JIkFLwSiR80FFifpLNMaqCLvsKqO5Omf3SBAytcYznuHYxirj2QyxTJJHazQdR/OYfFBK8F/FC5bGahm+pLb/AAAAAElFTkSuQmCC"/>گوشی موبایل</h2></li>
+                <li class="tp-items"><a>آیفون</a></li>
+                <li class="tp-items"><a>سامسونگ</a></li>
+                <li class="tp-items"><a>موتورلا</a></li>
+                <li class="tp-items"><a>شیايومی</a></li>
+            </ul>
+        </div>
+        <div class="top-left">
+            <ul>
+                <li><h2><img class="red-line" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANRJREFUSEvtVsENwjAMvHgEGjENZQF2gA9MUMaACeADO7AAMA1qGeGCqJqqpUJJC+kr+dq+sy+RLwqBjwqMjw7BA0hFZK2AhQESnwYUUBjgIuRhAtybNS2CQmRngMwH9FuOAvYJubXxmuAJzChy+wXc1pKcT4ESqybIRU4Alv8gAHDW5KpFUIjkvpq7mnjfSULqzwmMq7BPXJOlOk2JIkFLwSiR80FFifpLNMaqCLvsKqO5Omf3SBAytcYznuHYxirj2QyxTJJHazQdR/OYfFBK8F/FC5bGahm+pLb/AAAAAElFTkSuQmCC"/> برچمدار ها</h2></li>
+                <li class="tl-items"><a>سامسونگ S23</a></li>
+                <li class="tl-items"><a>ایفون 14</a></li>
+                <li class="tl-items"><a>ردمی 13</a></li>
+                <li class="tl-items"><a>هواوی h32</a></li>
+            </ul>
+        </div>
+        <div class="down-right">
+            <ul>
+                <li><h2><img class="red-line" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANRJREFUSEvtVsENwjAMvHgEGjENZQF2gA9MUMaACeADO7AAMA1qGeGCqJqqpUJJC+kr+dq+sy+RLwqBjwqMjw7BA0hFZK2AhQESnwYUUBjgIuRhAtybNS2CQmRngMwH9FuOAvYJubXxmuAJzChy+wXc1pKcT4ESqybIRU4Alv8gAHDW5KpFUIjkvpq7mnjfSULqzwmMq7BPXJOlOk2JIkFLwSiR80FFifpLNMaqCLvsKqO5Omf3SBAytcYznuHYxirj2QyxTJJHazQdR/OYfFBK8F/FC5bGahm+pLb/AAAAAElFTkSuQmCC"/>گوشی های محبوب</h2></li>
+                <li class="dr-items"><a>سامسونگ A54</a></li>
+                <li class="dr-items"><a>ایفون 14</a></li>
+                <li class="dr-items"><a>آیفون 13</a></li>
+                <li class="dr-items"><a>ردمی نوت ۸</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<div style="width: 100%;height: 450px">
+    <div class="div-slider">
+        <a>
+            <img src="images/main.gif" class="firt-gif" />
+        </a>
+        <a>
+            <img src="images/slider2.png" />
+        </a>
+        <a>
+            <img src="images/slider3.gif" />
+        </a>
+
+    </div>
+    <div class="arrows">
+    <span>
+        <img src="images/arrow-right.png" id="arrow-right"/>
+    </span>
+        <span>
+        <img src="images/arrow-left.png" id="arrow-left"/>
+    </span>
+    </div>
+</div>
+<ul class="div-main">
+    <li>
+        <img src="images/digijet.png">
+        <span>دیجی جت</span>
+    </li>
+
+    <li>
+        <img src="images/digibet.png">
+        <span>دیجی بت</span>
+    </li>
+    <li>
+        <img src="images/digiharaj.png">
+        <span>دیجی حراج</span>
+    </li>
+    <li>
+        <img src="images/digicharkhobakht.png">
+        <span>چرخ و بخت</span>
+    </li>
+    <li>
+        <img src="images/digiplus.png">
+        <span>دیجی پلاس</span>
+    </li>
+</ul>
+
+<script src="DigiKala.js"></script>
+</body>
+</html>
