@@ -91,7 +91,6 @@ header{
     margin-right: 3px;
 }
 .basket{
-    background-image: url("images/basket.png");
     width: 32px;
     height: 32px;
     margin-right: 5px;
@@ -482,9 +481,127 @@ button:hover{
     font-size: 12px;
     font-weight: 500;
 }
+.product-main{
+    width: 1600px;
+    height: 250px;
+    border-radius: 15px;
+    background-color: red;
+    margin: 10px auto;
+    overflow: hidden;
+    position: relative;
+}
+.product-main ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    float: right;
+    width: 1600px;
+
+}
+.product-main ul li{
+    height: 230px;
+    width: 14.2%;
+    top: 10px;
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+
+}
+.product-main ul li img{
+    height: 75%;
+    width: 75%;
+    margin-right: 25px;
+    margin-top: 5px;
+}
+.product-main ul li p{
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+}
+.product-main ul li del{
+    text-align: left;
+    height: 10px;
+    width: 10px;
+}
+.arrow-left{
+    height: 40px!important;
+    width: 40px!important;
+    position: absolute;
+    top: 40%;
+    display: block;
+    background-color: #decccc;
+    border-radius: 50%;
+    left: 10px;
+    cursor: pointer;
+}
+.arrow-right{
+    height: 40px!important;
+    width: 40px!important;
+    position: absolute;
+    top: 40%;
+    display: block;
+    background-color: #decccc;
+    border-radius: 50%;
+    right: 10px;
+    cursor: pointer;
+}
+
+.maingifs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 
 
+}
+.maingifs img{
+    margin-right: 10px;
+    border-radius: 20px;
+    width: 330px;
+    height: 230px;
+    cursor: pointer;
 
+}
+
+.dastemain{
+    justify-content: center;
+    align-items: center;
+
+}
+.dastemain h2{
+    text-align: center;
+
+}
+.dastemain li{
+    display: flex;
+    flex-direction: column;
+}
+.ul1{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 5px auto;
+    direction: rtl;
+}
+.ul1 img{
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
+}
+.ul2{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 5px auto;
+    direction: rtl;
+}
+.ul2 img{
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
+    justify-content: center;
+}
 
 
 

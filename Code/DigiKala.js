@@ -61,6 +61,7 @@ $(document).ready(function () {
     var arrowright = $('#arrow-right')
     var arrowleft = $('#arrow-left');
     var numberofsliders = Sliderimg.length;
+    var arrows = $('.arrows');
     var timeOut=5000
 
     function slider() {
@@ -96,8 +97,42 @@ $(document).ready(function () {
         NextSlide = NextSlide - 2;
         slider();
         clearInterval(slide);
+    }
+
+
+
+
+var sliderscrolltag = $('.product-main ul');
+var sliderli = sliderscrolltag.find('li');
+function sliderscrool(direction) {
+    var marginrightold=sliderscrolltag.css('margin-right')
+    marginrightold=parseFloat(marginrightold);
+    if(direction == "left"){
+    var marginrightnew=marginrightold-780;
+    sliderscrolltag.animate({'marginRight' : marginrightnew} , 3000)
+    }
+    if (direction == "right") {
 
     }
+
+
+}
+
+ $('.arrow-left').click(function () {
+     sliderscrool('left')
+ })
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
